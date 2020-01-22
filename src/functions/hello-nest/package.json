@@ -10,6 +10,6 @@
     "serverless-http": "^2.3.0"
   },
   "scripts": {
-    "postinstall": "rimraf node_modules/es6-iterator && rimraf node_modules/es5-ext"
+    "postinstall": "rimraf node_modules/es6-iterator/# && rimraf node_modules/es6-iterator/test/# && rimraf node_modules/es5-ext/*/# && rimraf node_modules/es5-ext/test/*/#"
   }
 }
