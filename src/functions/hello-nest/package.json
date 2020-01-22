@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "postinstall": "netlify-lambda install dist/functions"
-  },
   "dependencies": {
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
@@ -11,5 +8,8 @@
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
     "serverless-http": "^2.3.0"
+  },
+  "scripts": {
+    "postinstall": "rimraf node_modules/es6-iterator && rimraf node_modules/es5-ext"
   }
 }
